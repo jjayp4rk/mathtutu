@@ -92,9 +92,9 @@
 }
 
 .calendar .body .cell .bg {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
-  color: var(--main-color);
+  color: #ff9c1b;
   opacity: 0;
   font-size: 8em;
   position: absolute;
@@ -106,7 +106,7 @@
 
 .calendar .body .cell:hover .bg,
 .calendar .body .selected .bg {
-  opacity: 0.05;
+  opacity: 0.1;
   transition: 0.5s ease-in;
 }
 
