@@ -17,6 +17,11 @@ class App extends Component {
         <main>
           <Calendar />
         </main>
+        <section>
+          <span>
+            events<b>TuTu</b>
+          </span>
+        </section>
       </div>
     );
   }
