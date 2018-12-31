@@ -18,26 +18,48 @@ class AddEvent extends Component {
     const { student, time, description, subject } = this.state;
 
     return (
-      <div>
+      <div className="EventForm">
         <h1>ADD EVENT</h1>
         <form submit="">
-          Student:
-          <input
-            type="text"
-            name="student"
-            value={student}
-            placeholder="student"
-            onChange={this.handleOnChange}
-          />
-          Time:
-          <input
-            type="time"
-            name="time"
-            value={time}
-            placeholder="time"
-            onChange={this.handleOnChange}
-          />
-          <
+          <fieldset>
+            Student:
+            <br />
+            <input
+              type="text"
+              name="student"
+              value={student}
+              placeholder="student"
+              onChange={this.handleOnChange}
+            />
+            <br />
+            Time:
+            <br />
+            <input
+              type="time"
+              name="time"
+              value={time}
+              placeholder="time"
+              onChange={this.handleOnChange}
+            />
+            <br />
+            Subject: <br />
+            <input
+              type="text"
+              name="subject"
+              value={subject}
+              placeholder="subject"
+              onChange={this.handleOnChange}
+            />{" "}
+            <br />
+            Description: <br />
+            <textarea
+              type="text"
+              name="description"
+              value={description}
+              placeholder="Add a description..."
+              onChange={this.handleOnChange}
+            />
+          </fieldset>
         </form>
       </div>
     );
