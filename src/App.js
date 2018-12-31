@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Calendar from "./components/Calendar/Calendar";
 import "./App.css";
+import AddEvent from "./components/Event/AddEvent";
+
+import { API } from "aws-amplify";
+import { withAuthenticator } from "aws-amplify-react";
 
 class App extends Component {
   render() {
@@ -18,13 +22,14 @@ class App extends Component {
           <Calendar />
         </main>
         <section>
-          <span>
+          <div className="Events">
             events<b>TuTu</b>
-          </span>
+            <AddEvent />
+          </div>
         </section>
       </div>
     );
   }
 }
 
-export default App;
+export default withAuthenticator(App);

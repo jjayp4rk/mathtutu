@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "mathtutu-20181230191603-authRole",
+            "UnauthRoleArn": "arn:aws:iam::929290399929:role/mathtutu-20181230191603-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::929290399929:role/mathtutu-20181230191603-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "mathtutu-20181230191603-deployment",
+            "UnauthRoleName": "mathtutu-20181230191603-unauthRole",
+            "StackName": "mathtutu-20181230191603",
+            "StackId": "arn:aws:cloudformation:us-east-1:929290399929:stack/mathtutu-20181230191603/425cccc0-0c91-11e9-9657-0e17762a99e0"
+        }
+    }
+}

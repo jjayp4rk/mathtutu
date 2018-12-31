@@ -1,0 +1,49 @@
+{
+    "userPoolName": "mathtutu4e4a1145_userpool_4e4a1145",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "cognito4e4a1145_sns-role",
+    "roleExternalId": "cognito4e4a1145_role_external_id",
+    "policyName": "cognito4e4a1145-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "cognito4e4a1145_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": "1",
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "cognito4e4a1145_totp_lambda_role",
+    "mfaLambdaLogPolicy": "cognito4e4a1145_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "cognito4e4a1145_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "cognito4e4a1145_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "cognito4e4a1145_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "cognito4e4a1145_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "cognito4e4a1145_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "useDefault": "manual",
+    "authSelections": "userPoolOnly",
+    "resourceName": "cognito4e4a1145",
+    "unAuthRoleName": "mathtutu-20181230191603-unauthRole",
+    "authRoleName": "mathtutu-20181230191603-authRole",
+    "unAuthRoleArn": "arn:aws:iam::929290399929:role/mathtutu-20181230191603-unauthRole",
+    "authRoleArn": "arn:aws:iam::929290399929:role/mathtutu-20181230191603-authRole"
+}
