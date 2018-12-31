@@ -7,7 +7,14 @@ const awsmobile =  {
     "aws_user_pools_web_client_id": "36rrubsr445m4rj7fj26qv4dj8",
     "aws_content_delivery_bucket": "mathtutu-20181230193325-hostingbucket",
     "aws_content_delivery_bucket_region": "us-east-1",
-    "aws_content_delivery_url": "https://dh6jmz980to5r.cloudfront.net"
+    "aws_content_delivery_url": "https://dh6jmz980to5r.cloudfront.net",
+    "aws_dynamodb_all_tables_region": "us-east-1",
+    "aws_dynamodb_table_schemas": [
+        {
+            "tableName": "mathtutucalendar",
+            "region": "us-east-1"
+        }
+    ]
 };
 
 

@@ -1,11 +1,26 @@
 import React, { Component } from "react";
+import "./Events.css";
 
 class AddEvent extends Component {
   state = {
     student: "",
     time: "",
-    description: "",
-    subject: ""
+    subject: "",
+    description: ""
+  };
+
+  handleSubmit = event => {
+    const { addEvent } = this.props;
+    const { student, time, subject, description } = this.state;
+    addEvent({
+      student,
+      time: time.replace(":", ""),
+      subject,
+      description
+    });
+
+    this.setState({ student: "", time: "", subject: "", description: "" });
+    event.preventDefault();
   };
 
   handleOnChange = event => {
@@ -19,9 +34,10 @@ class AddEvent extends Component {
 
     return (
       <div className="EventForm">
-        <h1>ADD EVENT</h1>
-        <form submit="">
+        <form onSubmit={this.handleSubmit}>
           <fieldset>
+            Add Appointment
+            <br />
             Student:
             <br />
             <input
@@ -57,8 +73,12 @@ class AddEvent extends Component {
               name="description"
               value={description}
               placeholder="Add a description..."
+              rows="6"
+              cols="40"
               onChange={this.handleOnChange}
             />
+            <br />
+            <input type="submit" />
           </fieldset>
         </form>
       </div>

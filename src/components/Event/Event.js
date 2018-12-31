@@ -1,11 +1,24 @@
 import React from "react";
-import Event from "./Event";
+import dateFns from "date-fns";
 
-const Event = () => {
+const Event = ({ appointment }) => {
+  let time = new Date(
+    null,
+    null,
+    null,
+    appointment.time.substring(0, 2),
+    appointment.time.substring(2, 4)
+  );
+
   return (
-    <div>
-      <h1>This is a single event</h1>
-    </div>
+    <article>
+      {dateFns.format(time, "hh:mm A")} with{" "}
+      <strong>{appointment.student}</strong> ({appointment.subject})
+      <br />
+      <span>{appointment.description}</span>
+      <br />
+      <br />
+    </article>
   );
 };
 
