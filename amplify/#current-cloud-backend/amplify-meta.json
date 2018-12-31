@@ -19,7 +19,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/auth/cognito4e4a1145-cloudformation-template.yml",
 				"logicalId": "authcognito4e4a1145"
 			},
-			"lastPushTimeStamp": "2018-12-31T19:41:19.153Z",
+			"lastPushTimeStamp": "2018-12-31T20:53:01.749Z",
 			"output": {
 				"AppClientSecret": "mcvhgakq9u06po380avf2vfptp2un62ej93gd2ie8l6ui1bnr9c",
 				"UserPoolId": "us-east-1_fASIm7cmd",
@@ -38,7 +38,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/hosting/template.json",
 				"logicalId": "hostingS3AndCloudFront"
 			},
-			"lastPushTimeStamp": "2018-12-31T19:41:19.154Z",
+			"lastPushTimeStamp": "2018-12-31T20:53:01.749Z",
 			"output": {
 				"CloudFrontSecureURL": "https://dh6jmz980to5r.cloudfront.net",
 				"S3BucketSecureURL": "https://mathtutu-20181230193325-hostingbucket.s3.amazonaws.com",
@@ -52,24 +52,24 @@
 		}
 	},
 	"storage": {
-		"mathtutu": {
+		"dynamo02b8d0a9": {
 			"service": "DynamoDB",
 			"providerPlugin": "awscloudformation",
 			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/storage/mathtutu-cloudformation-template.json",
-				"logicalId": "storagemathtutu"
+				"s3TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/storage/dynamo02b8d0a9-cloudformation-template.json",
+				"logicalId": "storagedynamo02b8d0a9"
 			},
-			"lastPushTimeStamp": "2018-12-31T19:41:19.156Z",
+			"lastPushTimeStamp": "2018-12-31T20:53:01.751Z",
 			"output": {
 				"PartitionKeyName": "userId",
 				"SortKeyName": "id",
 				"SortKeyType": "S",
 				"Region": "us-east-1",
-				"Arn": "arn:aws:dynamodb:us-east-1:929290399929:table/mathtutucalendar",
+				"Arn": "arn:aws:dynamodb:us-east-1:929290399929:table/dynamo02b8d0a9",
 				"PartitionKeyType": "S",
-				"Name": "mathtutucalendar"
+				"Name": "dynamo02b8d0a9"
 			},
-			"lastPushDirHash": "BZdecyiQIgMzC7SyLTq6B6YUE5g="
+			"lastPushDirHash": "OYsbDbwmj3i+uVV4R+xQCSuGCLQ="
 		}
 	}
 }

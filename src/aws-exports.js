@@ -11,7 +11,7 @@ const awsmobile =  {
     "aws_dynamodb_all_tables_region": "us-east-1",
     "aws_dynamodb_table_schemas": [
         {
-            "tableName": "mathtutucalendar",
+            "tableName": "dynamo02b8d0a9",
             "region": "us-east-1"
         }
     ]

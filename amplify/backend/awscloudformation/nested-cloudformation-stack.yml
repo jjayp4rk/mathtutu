@@ -127,19 +127,12 @@
 				"Parameters": {}
 			}
 		},
-		"storagemathtutu": {
+		"storagedynamo02b8d0a9": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/storage/mathtutu-cloudformation-template.json",
-				"Parameters": {}
-			}
-		},
-		"storagedynamo46411725": {
-			"Type": "AWS::CloudFormation::Stack",
-			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/storage/dynamo46411725-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/mathtutu-20181230191603-deployment/amplify-cfn-templates/storage/dynamo02b8d0a9-cloudformation-template.json",
 				"Parameters": {
-					"tableName": "mathtutucalendar",
+					"tableName": "dynamo02b8d0a9",
 					"partitionKeyName": "userId",
 					"partitionKeyType": "S",
 					"sortKeyName": "id",

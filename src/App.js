@@ -4,7 +4,7 @@ import "./App.css";
 import AddEvent from "./components/Event/AddEvent";
 import Events from "./components/Event/Events";
 
-import { API } from "aws-amplify";
+// import { API } from "aws-amplify";
 import { withAuthenticator } from "aws-amplify-react";
 
 class App extends Component {
