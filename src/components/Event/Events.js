@@ -1,10 +1,19 @@
 import React, { Component } from "react";
+import Event from "./Event";
 
 class Events extends Component {
   render() {
+    const { events } = this.props;
     return (
-      <div>
-        <h1>HERE WILL BE THE EVENTS zz</h1>
+      <div className="Events">
+        <section>
+          <h4>Appointments</h4>
+          {events
+            .sort((a, b) => Number(a.time) - Number(b.time))
+            .map((appointment, i) => (
+              <Event key={i} appointment={appointment} />
+            ))}
+        </section>
       </div>
     );
   }
